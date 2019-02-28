@@ -16,7 +16,7 @@ class String
 
   def count_sentences
 splitted = self.split(sentence? || question? || exclamation?)
-splitted.count{|sentence| !+=
+splitted.count{|sentence| !nil}
 end 
 
 end
