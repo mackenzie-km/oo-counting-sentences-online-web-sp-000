@@ -16,10 +16,10 @@ class String
 
 require "pry"
   def count_sentences
-self.replace('!')
-self.replace('.') 
-self.replace('?') '$'
-splitted.split('$')
+self.replace('!') "$"
+self.replace('.') "$"
+self.replace('?') "$"
+splitted.split("$")
 splitted.count{|sentence| (sentence? || question? || exclamation?) && !nil}
 binding.pry 
 end 
