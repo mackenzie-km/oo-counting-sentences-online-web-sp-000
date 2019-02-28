@@ -16,7 +16,7 @@ class String
 
 require "pry"
   def count_sentences
-splitted = self.split(/?.!/)
+splitted = self.split("." || "?" || "!")
 splitted.count{|sentence| (sentence? || question? || exclamation?) && !nil}
 binding.pry 
 end 
