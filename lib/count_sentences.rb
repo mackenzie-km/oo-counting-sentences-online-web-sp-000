@@ -22,7 +22,7 @@ require "pry"
     #2 - On splitted pieces, check to see if any of the methods above are true sentence? || question? || exclamation? 
     #3 - If true - then count. If not true, then don't count. 
     #Issue: It is erasing the punctuation!
-  isolated_sentences = self.split(//)
+  isolated_sentences = self.split((?<=[(?!.]\s{1}))
   isolated_sentences.count{|sentence| sentence? || question? || exclamation?}
   binding.pry
 end 
