@@ -15,8 +15,8 @@ class String
   end
 
   def count_sentences
-splitted = self.split(/(?<=[(?!.]\s{1})/)
-splitted.count{|sentence| sentence? || question? || exclamation?}
+splitted = self.split(sentence? || question? || exclamation?)
+splitted.count{|sentence| !+=
 end 
 
 end
